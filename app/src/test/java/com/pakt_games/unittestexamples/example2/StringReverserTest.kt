@@ -18,4 +18,9 @@ class StringReverserTest {
         val result = SUT!!.reverse("")
         Truth.assertThat(result).contains("")
     }
+    @Test
+    fun reverseSingleCharacter_sameStringReturned() {
+        val result =SUT!!.reverse("h")
+        Truth.assertThat(result).contains("h")
+    }
 }
