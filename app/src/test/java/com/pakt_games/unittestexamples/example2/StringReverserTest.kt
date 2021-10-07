@@ -23,4 +23,9 @@ class StringReverserTest {
         val result =SUT!!.reverse("h")
         Truth.assertThat(result).contains("h")
     }
+    @Test
+    fun reverseWord_isReversedWord() {
+        val result =SUT!!.reverse("hasan")
+        Truth.assertThat(result).contains("nasah")
+    }
 }
